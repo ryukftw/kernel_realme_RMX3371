@@ -1,6 +1,9 @@
 #!/bin/bash
 clear
 
+echo "Cloning toolchain..."
+git clone -b main https://gitlab.com/ryukftw/toolchain.git
+
 DT=$(date +"%Y%m%d-%H%M")
 config=vendor/kona-perf_defconfig
 
